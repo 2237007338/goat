@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<button onclick="openlight()">开灯</button>
+		<button onclick="closelight()">关灯</button>
+		<img src="img/off.png" id="light"/>
+		<button onclick="openfan()">开风扇</button>
+		<button onclick="closefan()">关风扇</button>
+		<img src="img/stop.png" id="fan"/>
+	</body>
+	<script>
+		function openlight(){
+			            const imgElement = document.getElementById("light");
+			           imgElement.src="img/on.png"
+		}
+		function closelight(){
+			            const imgElement = document.getElementById("light");
+			           imgElement.src="img/off.png"
+		}
+		function openfan(){
+			            const imgElement = document.getElementById("fan");
+			           imgElement.src="img/fanstart.gif";
+		}
+		function closefan(){
+			            const imgElement = document.getElementById("fan");
+			           imgElement.src="img/stop.png";
+		}
+	</script>
+</html>

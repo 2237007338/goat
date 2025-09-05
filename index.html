@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			a{
+				display: block;
+				border: 1px solid gray;
+				width: 80px;
+				text-decoration: none;
+				color: black;
+				background-color: #eee;
+			}
+		</style>
+<script type="text/javascript">
+	// let obj =1;//obj是一个数字
+	// obj="cat";//obj成了一个字符串
+	// obj=[1,2,3];//obj成了一个数组
+	// let n =prompt("请输入一个数字",8);
+	// if(n)
+	// alert("你输入的数字是:"+n);
+	// else
+	//  alert("你没有输入");
+	//如果已知要循环的次数就用for循环
+	//如果i小于10就一直循环，直到ii不小于10
+	//每循环一次i的值就加1次
+	// for(let i=0;i<10;i++){
+	// 	//alert("i="+i);
+	// 	let n = Math.random()*10000;
+	// 	n = Math.round(n);//四舍五入
+	// 	n=241304*10000+n;
+	// 	alert(n);
+	// }
+	//非零代表是true，零代表是false假
+	// while(1)
+	// {
+	// 	break://<br> b=break
+	// }
+  let n = Math.round(Math.random() * 100);
+	while(1){
+		let m =prompt("请输入");
+		if(m){
+			if(m>n){
+				alert("大了");
+			}
+			if(m<n){
+				alert("小了");
+			}
+			if(m==n){
+				alert("恭喜你猜对了");
+				break;//结束循环
+			}
+		}
+		else{
+			alert("你输入的无效");
+		}
+	}
+</script>
+
+	</head>
+	<body>
+	<button onclick="alert()">弹出一个对话框</button>
+		<input type="button" value="显示年龄" onclick="showAge()"/>
+		<a href="Javascript:showAge()">显示年龄</a>
+		<button onclick="plus()">加</button>
+	</body>
+	<script>
+	//alert("Hello JavaScript");
+	console.log("输出Hello World")//在控制台输出内容
+	let age=18;
+	console.log("你的年龄"+age);
+	function showAge(){
+		alert("你的年龄是"+age)
+	}
+	function plus(){
+		let n1 = prompt("请输入第一个数");
+		let n2 = prompt("请输入第二个数");
+		let n3;
+		if(n1 && n2){
+			//n1和n2是字符串，需要转换成数字进行运算
+			n3=Number(n1)+Number(n2);
+			alert(n1+"+"+n2+"="+n3);
+		}
+		else
+		alert("输入的数字无效");
+	}
+	</script>
+</html>
